@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+    <name>Multidiscount_Couponcode</name>
+    <version>0.1.7</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Use same coupon code for multiple discounts based on cart total</summary>
+    <description>Its an extension which will provide you the ability to create a coupon code with multiple discount percentages.&#xD;
+Like if you want to provide discount for &#xD;
+&#xD;
+100-500 discount will be  10%&#xD;
+500-1000 discount will be 20%&#xD;
+1000-2000 discount will be 30%&#xD;
+&#xD;
+and so on.&#xD;
+&#xD;
+You just need to create a single coupon code and need to add from what amount to what amount how much discount you want to provide.</description>
+    <notes>fixing for cart total not found in range</notes>
+    <authors><author><name>Kingshuk deb</name><user>kingshukdeb</user><email>kingshukdeb88@gmail.com</email></author></authors>
+    <date>2016-08-10</date>
+    <time>10:34:58</time>
+    <contents><target name="magelocal"><dir name="Multidiscount"><dir name="Couponcode"><dir name="Block"><dir name="Adminhtml"><dir name="Promo"><dir name="Quote"><dir name="Edit"><file name="Options.php" hash="b251dd1751fb49adaa0143fe63b357e4"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="16e670874b16e6ea0f0a318fbae54c05"/></dir><dir name="Model"><file name="Observer.php" hash="cc58c72bed15cd57dedf24e0e64cf22d"/><file name="Percentconst.php" hash="c566016651e421e291039314231e1eb1"/><dir name="SalesRule"><file name="Validator.php" hash="0c927d0bcf6887e0c95d2570ce3eac1f"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><dir name="Promo"><file name="QuoteController.php" hash="630cf0a5e3daa42a1f1b32edb6378197"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="1932d41ed30fcaf19010e0b350d1691e"/></dir><dir name="sql"><dir name="couponcode_setup"><file name="mysql4-install-0.1.0.php" hash="dcaebeba905eb8719f5e218fd91e8794"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Multidiscount_Couponcode.xml" hash="c30e1bd8c3f55c2710f2aa2f360c98f0"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="promo"><file name="options.phtml" hash="2f85eb9fd93ae7f19b48e693b2f43040"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
